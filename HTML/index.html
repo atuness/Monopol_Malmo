@@ -1,0 +1,420 @@
+<!doctype>
+
+<html>
+
+<!-----------------HEAD----------------->
+
+<head>
+    <title>Monopol Malmö</title>
+    <link rel="icon" href="Images/Profilbild-Monopol-Malmo.png" type="image/png">
+    <meta charset="utf-8">
+    <link href="CSS/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/gng6hot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+</head>
+
+<!-----------------BODY----------------->
+
+<body>
+    <div id="wrapper">
+
+        <!-----------------TOP-NAV----------------->
+        <ul class="menu__body">
+            <div class="hide">
+                <button class="round-btn option btnLogin" type="submit ">LOGGA IN</button>
+                <button class="round-btn option btnRegister" type="submit ">REGISTRERA</button>
+                <button class="round-btn btnBoard" type="submit">SPELA</button>
+                <button class="round-btn btnProfil" type="submit ">EGENDOMAR</button>
+                <button class="round-btn btnScore" type="submit">POÄNGTAVLA</button>
+                <button class="round-btn btnRegler" type="submit">SPELREGLER</button>
+                <button class="round-btn btnKarta" type="submit">KARTA</button>
+            </div>
+        </ul>
+        <div id="top-nav">
+            <div class="rubrik"></div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <h2 id="rubrik"></h2>
+            <!--            <img id="fixed-logo" src="Images/Logotyp-Monopol-Malmo.png">-->
+        </div>
+
+        <!--START: MONOPOL MALMÖ-->
+
+        <div id="pageMonopol">
+            <img id="logotype" src="    Images/Logotyp-Monopol-Malmo.png">
+            <button class="round-btn btnRegister" type="submit ">STARTA HÄR</button>
+        </div>
+
+
+        <!-----------------LOGIN----------------->
+        <div id="pageLogin">
+
+            <h1>LOGGA IN</h1>
+
+            <form id="login-container">
+                <input id="email" type="text" placeholder="Lagnamn" name="name">
+                <input id="password" type="password" placeholder="Lösenord" name="psw">
+                <button id="sendLoginInfoButton" class="round-btn" type="submit">OK</button>
+            </form>
+
+            <div class="notRegisterdButton btnRegister">Utan lag? Registrera här.</div>
+
+        </div>
+        <!-----------------REGISTER----------------->
+
+        <div id="pageRegister">
+
+            <h1>REGISTRERA</h1>
+
+            <form id="register-container">
+                <input id="email" type="text" placeholder="Välj e-post..." name="email">
+                <input id="name" type="text" placeholder="Välj lagnamn..." name="name">
+                <input id="password" type="password" placeholder="Välj lösenord..." name="psw">
+                <input id="passwordTest" type="password" placeholder="Repetera lösenord" name="pswtest">
+                <button id="newUserButton" class="round-btn" type="submit">OK</button>
+            </form>
+
+            <div class="notRegisterdButton btnLogin">Redan registrerat? Logga in här.</div>
+
+        </div>
+        <!-----------------REGLER----------------->
+        <div id="pageRegler">
+            <div class="con-box">
+                <div class="whiteBox">
+                    <h3>ANTAL SPELARE</h3>
+                    <p>2-5 spelare/lag</p>
+                </div>
+                <div class="whiteBox">
+                    <h3>INLEDNING</h3>
+                    <p>Spelet går ut på att köpa och hyra ut eller sälja fastigheter så fördelaktigt som möjligt, så att ert lag blir det rikaste laget och slutligen har monopol på alla Malmös gator!</p>
+                </div>
+                <div class="whiteBox">
+                    <h3>BÖRJA SPELA</h3>
+                    <p>Laget börjar med ett startkapital på 1.500 kr. 
+                        I webappen slår ni tärningen för att hamna på en slumpmässigt vald plats i Slottsparken. Det gäller då att hitta dit med hjälp av er karta och checka in med koden på den fysiska platsbrickan. Ni ser då om tomten är ledig eller ägs av något annat lag.
+                        <br><br>
+                        Om ett lag landar på en tomt som inte redan ägs av ett annat lag får de köpa tomten från banken (detta görs i appen). Vissa gator är dyrare än andra, men ger också mer intäkter i form av hyra! Hamnar ni på en gata ert lag redan äger kan ni börja bygga hus på platsen, vilket ökar hyran de andra lagen får betala när de landar där. 
+                        Vill ni inte köpa tomten slår ni tärningen igen.
+                        <br><br>
+                        Om ni landar på en tomt som ägs av ett annat lag inkasserar de automatiskt hyra från laget som hamnar på brickan. Bygger ett lag bostadshus på en tomt ökas hyrorna avsevärt. 
+                        Ni som landat på den ägda brickan har också möjlighet att sabotera för motståndarna genom att attackera deras tomt. 
+                        Har de hus på sin tomt försvinner ett av dessa, men om tomten är obebyggd släpps den helt fri och kan köpas av andra lag! Att sabotera för ett annat lag sker till priset av 100 kr.
+                        <br><br>
+                        I Monopol Malmö finns även fyra tågstationer. Här kan ni inte bygga hus, men det är coolt att ha monopol på kollektivtrafiken, visst?
+                        </p>
+                </div>
+                <div class="whiteBox">
+                    <h2>GÅ</h2>
+                    <div class="flex">
+                        <img id="gabild" src="Images/ga.png">
+                    </div>
+                    <p>Varje lag inkasserar 500 kr efter vart femte slag. Detta motsvarar gatubrickan ”GÅ”.</p>
+                </div>
+                <div class="whiteBox">
+                    <h2>CHANS & ALLMÄNNING</h2>
+                    <div class="flex">
+                        <img id="chansbild" src="Images/chans.png">
+                        <img id="allmanningbild" src="Images/allmanning.png">
+                    </div>
+                    <p>Landar ni på chans eller allmänning går ni till vår chans- och allmänningsstation. 
+                        Stationen är utplacerad på er tilldelade karta. På plats tar ni ett kort från motsvarande talong och slår in koden i appen. Vad som händer sen får ni se!
+                    </p>
+                    <br><br>
+                    <p>PS! Här delar vi ut sportdryck för den som vill boosta er spelrunda!</p>
+                </div>
+                <div class="whiteBox">
+                    <h2>LYXSKATT</h2>
+                    <div class="flex">
+                        <img id="skattbild" src="Images/skatt.png">
+                    </div>
+                    <p>Om ert lag hamnar på lyxskatt betalar ni den till banken. Detta görs automatiskt.</p>
+                </div>
+                <div class="whiteBox">
+                    <h2>FÄNGELSE</h2>
+                    <div class="flex">
+                        <img id="chansbild" src="Images/fangelse.png">
+                    </div>
+                    <p>Ert lag kommer i fängelse:</p>
+                    <ol>
+                        <li>...om ni hamnar på en ruta märkt ”Gå i fängelse”</li>
+                        <li>...om ni drar ett kort märkt ”Gå i fängelse”</li>
+                    </ol>
+                    <br>
+                    <p>För att komma ut ur fängelset:</p>
+                    <ol>
+                        <li>...går ni till stationen “Fängelse” och följer de föreskrifter som ni blir tilldelade på plats. Detta kan antingen vara en utmaning eller en gåta. .</li>
+                        <li>...kan ni även betala er fria på plats. Det kostar dock hela 300 kr!</li>
+                        <br>
+                    </ol>
+                </div>
+                <div class="whiteBox">
+                    <h3>SÅ VINNER NI!</h3>
+                    <p>Kom ihåg att hålla koll på era tillgångar!
+                        Ett lag som är bankrutt, alltså har slut på pengar, har tyvärr förlorat och är ute ur spelet. Det sista laget kvar, eller laget som har mest pengar efter två timmar har vunnit spelet!
+                        </p>
+                </div>
+            </div>
+        </div>
+        <!-----------------PROFIL----------------->
+        <div id="pageProfil">
+            <div class="coins">
+                <h1 class="myMoney"> </h1>
+                <div class="money bi"></div>
+            </div>
+            <div class="myCapital"></div>
+        </div>
+        <!-----------------SCOREBOARD----------------->
+        <div id="pageScore">
+            <div class="capital"></div>
+        </div>
+
+        <!-----------------GAMEOVER----------------->
+
+        <div id="pageGameover">
+            <div class="gameoverText">
+                <h1>NI HAR BLIVIT BANKRUTT</h1>
+                <h2 class="whoDidThis"></h2>
+                <h2>GÅ tillbaka till stationen för Chans och Allmänning!</h2>
+            </div>
+        </div>
+
+        <!-----------------BOARD----------------->
+        <div id="pageBoard">
+            <div class="coins">
+                <h1 class="myMoney"> </h1>
+                <div class="money bi"></div>
+            </div>
+            <div class="changeMoney"></div>
+            <div class="hotel">
+                <div id="hus0" class="house"></div>
+                <div id="hus1" class="house"></div>
+                <div id="hus2" class="house"></div>
+                <div id="hus3" class="house"></div>
+            </div>
+            <section class="container margin">
+                <div id="cube">
+                    <div class="front">
+                        <span class="dot dot1"></span>
+                    </div>
+                    <div class="back">
+                        <span class="dot dot1"></span>
+                        <span class="dot dot2"></span>
+                    </div>
+                    <div class="right">
+                        <span class="dot dot1"></span>
+                        <span class="dot dot2"></span>
+                        <span class="dot dot3"></span>
+                    </div>
+                    <div class="left">
+                        <span class="dot dot1"></span>
+                        <span class="dot dot2"></span>
+                        <span class="dot dot3"></span>
+                        <span class="dot dot4"></span>
+                    </div>
+                    <div class="top">
+                        <span class="dot dot1"></span>
+                        <span class="dot dot2"></span>
+                        <span class="dot dot3"></span>
+                        <span class="dot dot4"></span>
+                        <span class="dot dot5"></span>
+                    </div>
+                    <div class="bottom">
+                        <span class="dot dot1"></span>
+                        <span class="dot dot2"></span>
+                        <span class="dot dot3"></span>
+                        <span class="dot dot4"></span>
+                        <span class="dot dot5"></span>
+                        <span class="dot dot6"></span>
+                    </div>
+                </div>
+            </section>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div id="cover">
+                            <div class="houseColor">
+                                <p>Ni landade på:</p>
+                                <h3 class="streetName"> </h3>
+                                <p class="theOwner"> </p>
+                            </div>
+                            <div id="rent"></div>
+                            <div class="stationText"></div>
+                            <div class="station"></div>
+                            <div id="pricelist">
+                                <div class="flexHouse">
+                                    <div class="left"> 1 HUS</div>
+                                    <div id="house1"></div>
+                                </div>
+                                <div class="flexHouse">
+                                    <div class="left"> 2 HUS</div>
+                                    <div id="house2"></div>
+                                </div>
+                                <div class="flexHouse">
+                                    <div class="left">3 HUS</div>
+                                    <div id="house3"></div>
+                                </div>
+                                <div class="flexHouse">
+                                    <div class="left">4 HUS</div>
+                                    <div id="house4"> </div>
+                                </div>
+                                <div class="flexHouse">
+                                    <div class="left">KÖP HUS</div>
+                                    <div id="house0"> </div>
+                                </div>
+                                <div class="flexHouse">
+                                    <div class="left">SABOTERA</div>
+                                    <div id="houseBomb"> </div>
+                                </div>
+                            </div>
+                            <button id="btnBomb" class="round-btn" type="submit">SABOTERA</button>
+                            <button id="btnBuy" class="round-btn" type="submit">KÖP</button>
+                            <button id="btnBuyHouse" class="round-btn" type="submit">KÖPA HUS</button> <button id="btnTarning" class="round-btn" type="submit">SLÅ TÄRNING</button> <button id="btnStation" class="round-btn" type="submit">SLÅ</button>
+
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="houseColor">
+                            <h4>Gå till:</h4>
+                            <h3 class="streetName"> TEST</h3>
+                            <form id="streetID" class="container">
+                                <input id="email" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="Skriv kod här..." name="name">
+                            </form>
+                            <button id="btn" class="round-btn" type="submit">OK</button>
+                            <button id="btnchans" class="round-btn" type="submit">OK</button>
+                            <button id="btnPrison" class="round-btn" type="submit">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--LOG IN-->
+            
+<!--
+            <div id="logNotis" class="notis">
+                <img class="icon" src="Images/checkmark.png">
+                <p class="green">Välkomna "lagnamn"!</p>
+            </div>
+-->
+
+
+            <!--REG LAG-->
+            <!--
+            <div id="regNotis" class="notis">
+                <img class="icon" src="Images/checkmark.png">
+                <p class="green">Registrerat lag!</p>
+            </div>
+-->
+            <!--FEL ANV. ELR LÖSEN-->
+            
+<!--
+            <div id="felAnvNotis" class="notis">
+                <img class="error" src="Images/checkmark.png">
+                <p class="red">Fel användarnamn eller lösenord</p>
+            </div>
+-->
+
+            <!--SABOTERAT-->
+
+<!--
+            <div id="saboteraNotis" class="notis">
+                <div class="circle">
+                    <img class="icon" src="Images/bomb-solid.png">
+                </div>
+                <p>Ni har saboterat<br>*GATA*</p>
+            </div>
+-->
+
+            <!--KÖPT GATA-->
+
+            <!--
+            <div id="kopaGataNotis" class="notis">
+                <img class="icon" src="Images/checkmark.png">
+                <p>Ni har köpt<br>*GATA*</p>
+            </div>
+-->
+
+
+            <!--KÖPT HUS-->
+
+            <!--
+            <div id="kopaHusNotis" class="notis">
+                <div class="circle">
+                    <img class="icon" src="Images/house.png">
+                </div>
+                <p>Ni har köpt 1 hus till<br>*GATA*</p>
+            </div>
+-->
+
+
+            <!--BETALA HYRA-->
+            <!--
+            <div id="hyraNotis" class="notis">
+                <div class="circle">
+                    <img class="icon" src="Images/hand-holding-usd-solid.png">
+                </div>
+                <p>Ouch! Någon äger redan gatan.<br>Betala hyra! (OBS! Autogiro)</p>
+            </div>
+-->
+
+
+            <!--HYRAN ÄR BETALD-->
+
+
+            <!--
+            <div id="hyraNotis" class="notis">
+                <div class="circle">
+                    <img class="icon" src="Images/thumbs-up-solid.png">
+                </div>
+                <p>Hyran är betald!</p>
+            </div>
+-->
+
+            <!--FÖRLORAT HUS-->
+
+            <!--
+            <div id="hyraNotis" class="notis">
+                <div class="circle">
+                    <img class="icon" src="Images/sad-tear-solid.png">
+                </div>
+                <p class="red">Någon har saboterat er gata...<br>Ni har förlorat 1 hus.</p>
+            </div>
+-->
+
+            <!--FÖRLORAT HUS-->
+
+            <!--
+            <div id="hyraNotis" class="notis">
+                <div class="circle">
+                    <img class="icon" src="Images/sad-tear-solid.png">
+                </div>
+                <p class="red">Någon har saboterat er gata...<br>Ni har förlorat den.</p>
+            </div>
+-->
+
+
+        </div>
+    <!-----------------KARTA----------------->
+    <div id="pageKarta">
+        <iframe src="https://snazzymaps.com/embed/238406" width="100%" height="800px" style="border:none;"></iframe>
+    </div>
+        <!-----------------BACKGROUND----------------->
+
+        <img id="background-image" src="Images/Malmo-Stad.png">
+
+    </div>
+
+    <!-----------------SCRIPT----------------->
+
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhhuXaZa7Hn7rTO7KzWS20c5TfCkeaZZk&callback=initMap">
+    </script>
+
+</body>
+
+</html>

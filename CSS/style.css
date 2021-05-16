@@ -1,0 +1,1367 @@
+/*---------------BACKGROUND---------------*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #D7E8DC;
+    font-family: jaf-domus, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation-duration: 2s;
+
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+#background-image {
+    width: 640px;
+    position: fixed;
+    bottom: -20;
+    left: -130;
+    animation-name: bounceInUp;
+    animation-duration: 1.4s;
+    opacity: 0.2;
+    z-index: -1
+}
+
+/*---------------BUTTONS---------------*/
+
+.round-btn {
+    width: 190px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 4px solid #2C9D57;
+    border-radius: 50px;
+    background: transparent;
+    color: #2C9D57;
+    font-size: 18px;
+    font-family: jaf-domus, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-btn:hover {
+    cursor: pointer;
+    background: #2C9D57;
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+}
+
+/*---------------TYPOGRAPHY---------------*/
+
+h1 {
+    font-family: neue-kabel, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 36px;
+    margin: 0px;
+    text-align: center;
+    color: #272727;
+}
+
+h2 {
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: #272727;
+    text-align: center;
+}
+
+h3 {
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    animation-duration: 2s;
+    color: #272727;
+}
+
+h4 {
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    animation-duration: 2s;
+    color: #272727;
+    margin: 0px;
+}
+
+
+p {
+    font-family: jaf-domus, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    color: #272727;
+
+}
+
+/*---------------TOP-NAV---------------*/
+
+#top-nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fixed-logo {
+    width: 88px;
+}
+
+/*---------------START: MONOPOL MALMÖ---------------*/
+
+#pageMonopol {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logotype {
+    width: 60vw;
+    backface-visibility: visible !important;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+#pageKarta{
+    display: none;
+}
+
+/*---------------LOGIN---------------*/
+
+#pageLogin {
+    width: 100vw;
+    height: 60vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 280px;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border: none;
+    background: white;
+    font-family: jaf-domus, sans-serif;
+    font-weight: 0;
+    font-size: 18px;
+    border: 1px solid #BCBCBC;
+    animation-name: bounceInLeft;
+    color: #656565;
+    transition: all .2s ease-out;
+    border-radius: 5px;
+}
+
+input:hover {
+    background: #F2F2F2;
+}
+
+input:focus {
+    border: 1px solid #0068AA;
+    background: #E5F6FF;
+}
+
+#email {
+    animation-duration: 1.5s;
+}
+
+#name {
+    animation-duration: 2s;
+}
+
+#password {
+    animation-duration: 2.5s;
+}
+
+#passwordTest {
+    animation-duration: 3s;
+}
+
+#newUserButton {
+    animation-name: bounceInLeft;
+    animation-duration: 3.5s;
+}
+
+.light {
+    font-family: jaf-domus, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 0px;
+    margin-top: 12px;
+}
+
+#register-container,
+#login-container {
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.light:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#sendLoginInfoButton {
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
+}
+
+.notRegisterdButton {
+    font-size: 18px;
+    color: #2C9D57;
+    position: absolute;
+    bottom: 20px;
+}
+
+.notRegisterdButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/*---------------REGISTER---------------*/
+
+#pageRegister {
+    width: 100vw;
+    height: 70vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------------REGLER---------------*/
+
+#pageRegler {
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.con-box {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+/*---------------PROFIL---------------*/
+
+#pageProfil {
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capitalDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 80vw;
+    box-shadow: 2px 3px 5px rgba(40, 40, 40, 0.1);
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.myCapital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whiteBox {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 27px 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(40, 40, 40, 0.1);
+    margin-bottom: 10px;
+}
+
+/*---------------SCOREBOARD---------------*/
+
+#pageScore {
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*---------------BOARD---------------*/
+
+#pageBoard {
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notis {
+    background: white;
+    width: 95vw;
+    height: 70px;
+    position: absolute;
+    top: 10;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(40, 40, 40, 0.3);
+    animation: slideInDown;
+    animation-duration: 0.4s;
+    text-align: center;
+}
+
+.circle {
+    margin-right: 3px;
+    width: 20px;
+    position: absolute;
+    left: 20;
+    background: #D5EDFA;
+    padding: 7px;
+    border-radius: 50%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px rgba(40, 40, 40, 0.1);
+}
+
+#logNotis {
+    display: none;
+}
+
+.icon {
+    width: 17px;
+}
+
+.green {
+    color: #2C9D57;
+}
+
+.red {
+    color: #E40522;
+}
+
+/*---------------HAMBRUGER NAV---------------*/
+.menu-btn {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    top: 30;
+    left: 30;
+}
+
+.menu-btn__burger {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    background: #2C9D57;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    background: #2C9D57;
+}
+
+.menu-btn__burger::before {
+    z-index: 10;
+    position: absolute;
+    transform: translateY(-16px);
+}
+
+.menu-btn__burger::after {
+    z-index: 10;
+    position: absolute;
+    transform: translateY(16px);
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+    z-index: 10;
+    position: absolute;
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    z-index: 10;
+    position: absolute;
+    transform: rotate(45deg) translate(35px, -35px);
+    background: #2C9D57;
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    z-index: 10;
+    position: absolute;
+    transform: rotate(-45deg) translate(35px, 35px);
+    background: #2C9D57;
+}
+
+/*---------------NAVBAR---------------*/
+.menu__body {
+    position: absolute;
+    left: -150;
+    width: 7em;
+    height: 7em;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    background-color: #ffffff;
+    border-bottom-right-radius: 100%;
+    box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.2);
+    -webkit-animation: checkboxUncheckedAnimation 0.35s both;
+    animation: checkboxUncheckedAnimation 0.35s both;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.option {
+    display: none;
+    animation-name: bounceInLeft;
+}
+
+.myMoney {
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    animation-duration: 2s;
+}
+
+.changeMoney {
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 26px;
+    animation-duration: 2s;
+    margin: auto;
+
+}
+
+.get {
+    animation: get;
+    animation-duration: 2s;
+}
+
+.pay {
+    animation: pay;
+    animation-duration: 2s;
+}
+
+.btnBoard,
+.btnProfil,
+.btnLogin {
+    animation-duration: 1s;
+}
+
+.btnProfil,
+.btnRegister {
+    animation-duration: 1.5s;
+}
+
+.btnScore {
+    animation-duration: 2s;
+}
+
+.hotel {
+    align-self: center;
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#btnstation{
+    margin: auto;
+}
+
+#hus1,
+#hus2,
+#hus3,
+#hus0 {
+    display: none;
+}
+
+.btnRegler {
+    animation-duration: 2.5s;
+}
+
+#rent {
+    margin-top: 8px;
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.btnProfil,
+.btnScore,
+.btnRegler,
+.btnBoard,
+#btnBomb,
+#btnBuy,
+#btnBuyHouse,
+.btnKarta {
+    display: none;
+}
+
+#btnBomb,
+#btnBuy,
+#btnBuyHouse,
+#btnTarning {
+    margin: auto;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.station {
+    font-size: 82px;
+    margin: auto;
+    text-align: center;
+}
+
+.swal2-actions{
+    flex-direction: column;
+}
+
+/*---------------TÄRNING---------------*/
+#cube .front {
+    transform:
+        translateZ(100px);
+}
+
+#cube .back {
+    transform:
+        rotateX(-180deg) translateZ(100px);
+}
+
+#cube .right {
+    transform:
+        rotateY(90deg) translateZ(100px);
+}
+
+#cube .left {
+    transform:
+        rotateY(-90deg) translateZ(100px);
+}
+
+#cube .top {
+    transform:
+        rotateX(90deg) translateZ(100px);
+}
+
+#cube .bottom {
+    transform:
+        rotateX(-90deg) translateZ(100px);
+}
+
+.container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto 40px;
+    perspective: 1000px;
+    perspective-origin: 50% 100%;
+}
+
+.margin {
+    margin-top: 50px;
+}
+
+#cube {
+    width: 100%;
+    height: 100%;
+    top: 60px;
+    position: absolute;
+
+    transform-style: preserve-3d;
+
+    transition: transform 6s;
+}
+
+#cube:hover {
+    cursor: pointer;
+}
+
+#cube div {
+    background: white;
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border: 5px solid black;
+
+    margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.dot {
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+}
+
+.front .dot1 {
+    top: 85px;
+    left: 85px;
+}
+
+.back .dot1 {
+    top: 45px;
+    left: 45px;
+}
+
+.back .dot2 {
+    top: 125px;
+    left: 125px;
+}
+
+.right .dot1 {
+    top: 45px;
+    left: 45px;
+}
+
+.right .dot2 {
+    top: 85px;
+    left: 85px;
+}
+
+.right .dot3 {
+    top: 125px;
+    left: 125px;
+}
+
+.left .dot1 {
+    top: 45px;
+    left: 45px;
+}
+
+.left .dot2 {
+    top: 45px;
+    left: 125px;
+}
+
+.left .dot3 {
+    top: 125px;
+    left: 45px;
+}
+
+.left .dot4 {
+    top: 125px;
+    left: 125px;
+}
+
+.top .dot1 {
+    top: 45px;
+    left: 45px;
+}
+
+.top .dot2 {
+    top: 45px;
+    left: 125px;
+}
+
+.top .dot3 {
+    top: 85px;
+    left: 85px;
+}
+
+.top .dot4 {
+    top: 125px;
+    left: 45px;
+}
+
+.top .dot5 {
+    top: 125px;
+    left: 125px;
+}
+
+.bottom .dot1 {
+    top: 45px;
+    left: 45px;
+}
+
+.bottom .dot2 {
+    top: 45px;
+    left: 85px;
+}
+
+.bottom .dot3 {
+    top: 45px;
+    left: 125px;
+}
+
+.bottom .dot4 {
+    top: 125px;
+    left: 45px;
+}
+
+.bottom .dot5 {
+    top: 125px;
+    left: 85px;
+}
+
+.bottom .dot6 {
+    top: 125px;
+    left: 125px;
+}
+
+.tillbaka {
+    left: 0;
+    -webkit-animation: checkboxCheckedAnimation 2s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+    animation: checkboxCheckedAnimation 2s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+}
+
+.flip-card {
+    display: none;
+    position: absolute;
+    top: 170;
+    margin-left: 5px;
+    z-index: 1;
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    animation-duration: 1.4s;
+    margin-top: 60px;
+    box-shadow: 10px 20px 50px gray;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back,
+#cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+#cover {
+    display: none;
+}
+
+#btnchans,
+#btn,
+#btnPrison {
+    display: none;
+    margin: auto;
+}
+
+.flexHouse {
+    display: flex;
+    width: 60%
+}
+
+.left {
+    text-align: left;
+}
+
+.coins,
+.hotel {
+    margin-top: 4px;
+    background: white;
+    text-align: center;
+    display: flex;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(40, 40, 40, 0.1);
+}
+
+.coins {
+    height: 70px;
+
+}
+
+
+.flexhouse div {
+    flex-basis: 10px;
+    flex-grow: 1;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+#pricelist {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the back side */
+.flip-card-back {
+    border: 3px solid black;
+    background: white;
+    transform: rotateY(180deg);
+}
+
+.houseColor {
+    height: 80px;
+    background: hotpink;
+    background-color: hotpink;
+    border-bottom: 3px solid black;
+    padding-top: 20px;
+}
+
+.streetName {
+    font-size: 26px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+/*---------------SCOREBOARD---------------*/
+
+.opponent {
+    font-size: 26px;
+    color: #2D6FAA
+}
+
+.teamCapital {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 80vw;
+    box-shadow: 2px 3px 5px rgba(40, 40, 40, 0.1);
+    height: 30px;
+}
+
+.teamCapital:last-child {
+    margin-bottom: 30px;
+}
+
+.teamStreets {
+    background-color: rgb(255, 255, 255, 0.5);
+    color: #272727;
+    display: none;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    flex-direction: column;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.aHouse {
+    padding: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: 30px;
+    font-family: neue-kabel, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.aHouse:last-child {
+    border-bottom: 0px;
+}
+
+.divHouse {
+    display: flex;
+}
+
+.house {
+    width: 19px;
+    height: 15px;
+    background-image: url(../Images/house.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px;
+}
+
+.btn-success {
+    width: 190px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 4px solid #2C9D57;
+    border-radius: 50px;
+    background: transparent;
+    color: #2C9D57;
+    font-size: 18px;
+    font-family: jaf-domus, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-success:hover {
+    background: #2C9D57;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-danger {
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 4px solid #E40522;
+    border-radius: 50px;
+    background: transparent;
+    color: #E40522;
+    font-size: 18px;
+    font-family: jaf-domus, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-danger:hover {
+    background: #E40522;
+    color: white;
+    cursor: pointer;
+}
+
+.menyPil {
+    width: 20px;
+    height: 10px;
+    background-image: url(../Images/sort-down-solid.png);
+    background-size: contain;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+.menyPil:hover {
+    cursor: pointer;
+}
+
+.teamMoney {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big {
+    animation: big;
+}
+
+.amount {
+    margin-right: 2vw;
+}
+
+.stationText{
+    display: none;
+}
+
+.money {
+    width: 50px;
+    background-image: url(../Images/money.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.teamContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.bi {
+    margin: 11px 0px 5px 15px;
+}
+
+.btnKarta {
+    animation-duration: 3s;
+}
+
+/*---------------GAMEOVER---------------*/
+#pageGameover{
+    display: none;
+    background-color: #2d6faa;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.gameoverText{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgba(40, 40, 40, 0.1);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#gabild {
+    height: 80px;
+}
+
+#skattbild {
+    height: 70px;
+}
+
+#chansbild {
+    height: 80px;
+}
+
+#allmanningbild {
+    height: 100px;
+}
+
+#allmanningbild {
+    height: 100px;
+}
+
+.containNameNHouse{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.bankrutt{
+    width: 80vw;
+    background-image: url(../Images/bankrutt.svg);
+    background-size: contain;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes checkboxCheckedAnimation {
+    50% {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    100% {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
+
+@keyframes checkboxUncheckedAnimation {
+    0% {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@keyframes changeWidthOfElementAnimation {
+    50% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+/*---------------ANIMATIONS---------------*/
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounceInUp {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(0, 3000px, 0);
+    }
+
+    60% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInLeft {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInBottom {
+    0% {
+        transform: translate3d(0, 300%, 0)
+    }
+
+    58% {
+        transform: translate3d(0, -27px, 0)
+    }
+
+    73% {
+        transform: translate3d(0, 12px, 0)
+    }
+
+    88% {
+        transform: translate3d(0, -8px, 0)
+    }
+}
+
+@keyframes bounceIndown {
+    0% {
+        transform: translate3d(0, -8px, 0)
+    }
+
+
+    88% {
+        transform: translate3d(0, 300%, 0)
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: skewX(-15deg);
+    }
+
+    5% {
+        transform: skewX(15deg);
+    }
+
+    10% {
+        transform: skewX(-20deg);
+    }
+
+    15% {
+        transform: skewX(20deg);
+    }
+
+    20% {
+        transform: skewX(-20deg);
+    }
+
+    25% {
+        transform: skewX(20deg);
+    }
+
+    30% {
+        transform: skewX(-15deg);
+    }
+
+    35% {
+        transform: skewX(15deg);
+    }
+
+    40% {
+        transform: skewX(0deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+@keyframes get {
+    0% {
+        color: #2C9D57;
+    }
+
+    50% {
+        font-size: 48px;
+        color: #2C9D57;
+    }
+
+    100% {
+        font-size: 26px;
+        color: black;
+    }
+}
+
+@keyframes pay {
+    0% {
+        color: red;
+    }
+
+    50% {
+        font-size: 48px;
+        color: red;
+    }
+
+    100% {
+        font-size: 30px;
+        color: black;
+    }
+}
+
+@keyframes big {
+    0% {
+        font-size: 30px;
+    }
+
+    50% {
+        font-size: 26px;
+    }
+
+    100% {
+        font-size: 16px;
+    }
+}
