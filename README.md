@@ -1,0 +1,1 @@
+This is a modern take on Monopoly called: Monopol Malmö. BUT: you are the game piece that has to move in real life. Roll the dice and walk to the assigned location. At the location there will be a sign with a code. As you enter the code you confirm that you have arrived and can choose what you want to do with the location. Buy it, sell it or bomb it.
